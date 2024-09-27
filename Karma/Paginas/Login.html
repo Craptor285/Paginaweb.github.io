@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    
+    header{
+    top: 0%;
+    font-family:Arial;
+    color: white;
+    list-style: none;
+    position: fixed;
+    left: 0%;
+    background-color: rgb(0, 0, 0);
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    } 
+    .logo{
+    left: 5%;
+    width: 5%;
+    height: 85%;
+    }
+    body{
+        background-image: url(https://a-static.besthdwallpaper.com/river-landscape-wallpaper-2800x2100-81127_28.jpg);
+    }
+    .Formulario{
+        font-family: 'Gill Sans', 'Gill Sans MT', Arial, Helvetica, sans-serif, 'Trebuchet MS', sans-serif;
+        font-size: 2.5vh;
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        width: 30%;
+        height: 60%;
+        border: solid black 1px;
+        border-radius: 10px;
+        background-color: rgba(255, 254, 254, 0.651);
+    }
+    input{
+        width: 70%;
+        border-radius: 10px;
+    }
+    input:hover{
+        background-color: rgb(243, 224, 184);
+    }
+    .volver:hover{
+        background-color: rgb(243, 224, 184);
+    }
+    .st_datos{
+        font-size: 2.45vh;
+        position: absolute;
+        top: 25.5%;
+        left: 9%;
+        width: 30%;
+        height: auto;
+    }
+    .Entradas{
+        height: auto;
+        width: 60%;
+        position: absolute;
+        right: 10%;
+    }
+    .volver{
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: 0%;
+    }
+    footer{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    }
+    @media screen and (max-width: 800px){
+        .Formulario{
+            width: 70%;
+            left: 15%;
+        }
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    
+
+    <div class="Formulario">
+        <br><br><center>Crear Cuenta</center><br>
+        <div class="st_datos">Nombre<br>Apellido<br>Edad<br>Sexo<br><br>Ciudad<br>Calle<br>Numero de calle<br>Codigo postal<br>Correo</div>
+        <center><form action="conect.php" method="post">
+            
+            <div class="Entradas"><center>Datos personales</center>
+            <input type="text" name="Nombre" placeholder="Nombre" id="entradas"><br>
+            <input type="text" name="Apellido" placeholder="Apellido" id="entradas"><br>
+            <input type="date" name="FechaN" placeholder="Fecha de nacimiento" id="entradas"><br>
+            <input type="text" name="Sexo" placeholder="Sexo" id="entradas"><br>
+            <center>Direccion</center>
+            <input type="text" name="Ciudad" placeholder="Ciudad" id="entradas"><br>
+            <input type="text" name="Calle" placeholder="Calle" id="entradas"><br>
+            <input type="text" name="NumeroC" placeholder="NumeroC" id="entradas"><br>
+            <input type="text" name="CodigoP" placeholder="Codigo postal" id="entradas"><br>
+            <input type="text" name="Correo" placeholder="Correo electronico" id="entradas"><br>
+            
+
+
+            <br><input type="submit" name="subir">
+        </div>
+        </form></center>
+        <button onclick="Volver()" style="border-radius: 5px;" class="volver">Volver</button>
+    </div>
+    
+    <footer class="creditos"></footer>
+        <div class="datos">Desarrolladores:<br>Carlos Alfredo Lara Flores</div>
+        <div class="datos">Redes</div>
+        <div class="datos">Contacto</div>
+        <div class="datos">Telefono</div>
+        <div class="datos">Correo</div>
+    </footer>
+
+    <header>
+        <div class="logo">
+            <img src="/Karma/Media/9ab0db65-7f7a-4076-8309-6b6237aee08c.jpg" width="100%" height="100%">
+        </div>
+    </header>
+</body>
+</html>
+
+<script>
+    function Volver(){
+        location.href="/Karma/index.html"
+    }
+</script>
